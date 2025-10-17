@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Lightbox from 'yet-another-react-lightbox'
@@ -9,7 +9,7 @@ export default function Gallery() {
   const [photoIndex, setPhotoIndex] = useState(-1)
 
   const images = [
-    { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80', category: 'Lobby' },
+    { src: '/images/room1.jpg', category: 'room' },
     { src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80', category: 'Rooms' },
     { src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80', category: 'Rooms' },
     { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80', category: 'Rooms' },
@@ -31,16 +31,16 @@ export default function Gallery() {
     : images.filter(img => img.category === activeCategory)
 
   return (
-    <div className="min-h-screen bg-white pt-32 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-32 pb-20 bg-white">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="mb-12 text-center"
         >
           <p className="section-subtitle">EXPLORE OUR HOTEL</p>
           <h1 className="section-title">Gallery</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="max-w-2xl mx-auto mt-4 text-gray-600">
             Discover the elegance and luxury that awaits you at H&J Hotel
           </p>
         </motion.div>
@@ -63,7 +63,7 @@ export default function Gallery() {
 
         <motion.div 
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
         >
           {filteredImages.map((image, index) => (
             <motion.div
@@ -77,13 +77,13 @@ export default function Gallery() {
               className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group"
               onClick={() => setPhotoIndex(images.findIndex(img => img.src === image.src))}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.category}
-                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center justify-center transition-all duration-300 bg-black bg-opacity-0 group-hover:bg-opacity-40">
+                <span className="text-lg font-semibold text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   {image.category}
                 </span>
               </div>
