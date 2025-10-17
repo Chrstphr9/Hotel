@@ -42,7 +42,7 @@ export default function Contact() {
     {
       icon: FaMapMarkerAlt,
       title: 'Address',
-      detail: '123 Luxury Avenue, Suite 500, New York, NY 10001',
+      detail: 'No.3 B.T.Ben Okonkuyo Close Off Okpanam Road No.3 B.T.Ben Okonkuyo Close Off Okpanam Road By Liberty Event Center',
       link: 'https://maps.google.com'
     },
     {

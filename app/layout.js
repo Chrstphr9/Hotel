@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'H&J Hotel - Quality and Design',
+  title: 'S&W Hotel - Quality and Design',
   description: 'Experience luxury and elegance at H&J Hotel. Modern accommodations with exceptional service.',
 }
 
