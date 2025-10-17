@@ -172,7 +172,14 @@ export default function Reservation() {
                         formData.roomType === room.id ? 'border-gold-500 shadow-xl' : 'border-gray-200'
                       }`}
                     >
-                      <Image src={room.image} alt={room.name} className="object-cover w-full h-40" />
+                      <Image
+                        src={room.image}
+                        alt={room.name}
+                        width={400}
+                        height={160}
+                        className="object-cover w-full h-40"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
                       <div className="p-4">
                         <h3 className="mb-1 font-semibold">{room.name}</h3>
                         <p className="font-bold text-gold-500">{room.price}</p>

@@ -9,18 +9,21 @@ export default function Gallery() {
   const [photoIndex, setPhotoIndex] = useState(-1)
 
   const images = [
-    { src: '/images/room1.jpg', category: 'room' },
-    { src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80', category: 'Rooms' },
-    { src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80', category: 'Rooms' },
-    { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200&q=80', category: 'Rooms' },
-    { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80', category: 'Restaurant' },
-    { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80', category: 'Restaurant' },
-    { src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80', category: 'Design' },
-    { src: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=1200&q=80', category: 'Amenities' },
-    { src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80', category: 'Lobby' },
-    { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&q=80', category: 'Amenities' },
-    { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&q=80', category: 'Restaurant' },
-    { src: 'https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?w=1200&q=80', category: 'Design' },
+    { src: '/images/room1.jpg', category: 'Rooms' },
+    { src: '/images/room2.jpg', category: 'Rooms' },
+    { src: '/images/room3.jpg', category: 'Rooms' },
+    { src: '/images/lounge3.jpg', category: 'Lounges' },
+    { src: '/images/apartment.jpg', category: 'Apartments' },
+    { src: '/images/res1.jpg', category: 'Restaurant' },
+    { src: '/images/apartment2.jpg', category: 'Apartments' },
+    { src: '/images/res2.jpg', category: 'Restaurant' },
+    { src: '/images/room5.jpg', category: 'Rooms' },
+    { src: '/images/lounge1.jpg', category: 'Lounges' },
+    { src: '/images/lounge2.jpg', category: 'Lounges' },
+    { src: '/images/apartment3.jpg', category: 'Apartments' },
+    { src: '/images/room4.jpg', category: 'Rooms' },
+    { src: '/images/lobby1.jpg', category: 'Lobbies' },
+    { src: '/images/lobby2.jpg', category: 'Lobbies' },
   ]
 
   const categories = ['All', ...new Set(images.map(img => img.category))]
@@ -80,7 +83,10 @@ export default function Gallery() {
               <Image
                 src={image.src}
                 alt={image.category}
+                width={1200}
+                height={800}
                 className="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110"
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="absolute inset-0 flex items-center justify-center transition-all duration-300 bg-black bg-opacity-0 group-hover:bg-opacity-40">
                 <span className="text-lg font-semibold text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">

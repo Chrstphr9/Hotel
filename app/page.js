@@ -13,6 +13,8 @@ export default function Home() {
           <Image
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80"
             alt="Hotel Lobby"
+            width={1600}
+            height={900}
             className="object-cover w-full h-full opacity-50"
           />
         </div>
@@ -55,8 +57,10 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80"
+                src='/images/room9.jpg'
                 alt="Hotel Interior"
+                width={800}
+                height={600}
                 className="w-full h-[600px] object-cover"
               />
             </motion.div>
@@ -121,7 +125,10 @@ export default function Home() {
           <Image
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80"
             alt="Fine Dining"
+            fill
+            sizes="100vw"
             className="object-cover w-full h-full opacity-40"
+            priority
           />
         </div>
         <div className="relative z-10 max-w-4xl px-4 mx-auto text-center">
@@ -171,8 +178,10 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+                src='/images/room5.jpg'
                 alt="Modern Design"
+                width={800}
+                height={600}
                 className="w-full h-[500px] object-cover"
               />
             </motion.div>
