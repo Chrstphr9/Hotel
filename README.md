@@ -48,15 +48,38 @@ npm start
 
 ## 📧 Email Configuration
 
-Currently, reservation submissions are logged to the console. To enable actual email sending:
+The reservation system is now configured to send detailed emails to **somto565@gmail.com** when a reservation is submitted. 
 
-1. **Option 1 - Using Resend (Recommended):**
-   - Set up the Resend integration in Replit
-   - Update `/app/api/send-reservation/route.js` to use the Resend SDK
+### Setup Instructions
 
-2. **Option 2 - Custom Email Service:**
-   - Add your email service credentials as secrets
-   - Update the API route with your email service configuration
+1. **Get a Resend API Key:**
+   - Sign up at [https://resend.com](https://resend.com)
+   - Create a new API key from your dashboard
+   - Copy the API key
+
+2. **Configure Environment Variables:**
+   Create a `.env.local` file in your project root:
+   ```bash
+   RESEND_API_KEY=your_resend_api_key_here
+   ```
+   Replace `your_resend_api_key_here` with your actual Resend API key.
+
+3. **Email Features:**
+   - ✅ Sends formatted HTML emails to somto565@gmail.com
+   - ✅ Includes all reservation details (dates, room type, guest info, special requests)
+   - ✅ Calculates total cost automatically
+   - ✅ Professional email template with Hotel Haven branding
+   - ✅ Both text and HTML versions for better compatibility
+
+### Email Content Includes:
+- 📅 Check-in and check-out dates with full formatting
+- 🏨 Room type and pricing information
+- 👤 Complete guest information (name, email, phone)
+- 📝 Special requests (if provided)
+- 💰 Automatic total cost calculation
+- ⏰ Submission timestamp
+
+**Note:** Make sure to add your `.env.local` file to `.gitignore` to keep your API key secure.
 
 ## 🛠️ Tech Stack
 

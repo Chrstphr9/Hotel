@@ -23,9 +23,12 @@ export default function Reservation() {
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const roomTypes = [
-    { id: 'deluxe', name: 'Deluxe Suite', price: '$299/night', image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&q=80' },
-    { id: 'executive', name: 'Executive Room', price: '$399/night', image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&q=80' },
-    { id: 'presidential', name: 'Presidential Suite', price: '$799/night', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80' }
+    { id: 'deluxe', name: 'Standard Suite', price: 'N45,000/night', image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&q=80' },
+    { id: 'regular', name: 'Regular Suite', price: 'N55,000/night', image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&q=80' },
+    { id: 'executive', name: 'Executive Suite', price: 'N60,000/night', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80' },
+    { id: 'royal', name: 'Royal Suite', price: 'N80,000/night', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80' },
+    { id: 'apartment', name: 'Apartment Suite', price: 'N200,000/night', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80' },
+        { id: 'vip', name: 'VIP Lounge', price: 'N230,000/night', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80' },
   ]
 
   const handleSubmit = async (e) => {
