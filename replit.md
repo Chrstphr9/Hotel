@@ -1,4 +1,4 @@
-# H&J Hotel Website
+# S&W Hotel Website
 
 ## Overview
 A modern, fully responsive 4-page hotel website built with Next.js (JavaScript) and Tailwind CSS. Features elegant black, white, and gold color scheme inspired by luxury hotel design.

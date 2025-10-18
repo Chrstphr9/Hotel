@@ -19,7 +19,7 @@ const roomPrices = {
   'executive': 'N60,000/night', 
   'royal': 'N80,000/night',
   'apartment': 'N200,000/night',
-  'vip': 'N230,000/night'
+  'vip': 'N250,000/night'
 }
 
 export async function POST(request) {
@@ -80,14 +80,14 @@ ${data.specialRequests || 'None specified'}
 
     // Send email using Resend
     const emailResponse = await resend.emails.send({
-      from: 'Hotel Haven <onboarding@resend.dev>',
-      to: ['somto565@gmail.com'],
+      from: 'Sky Dew Hotels <onboarding@resend.dev>',
+      to: ['info@skydewhotels.com'],
       subject: `🏨 New Reservation Request - ${data.firstName} ${data.lastName}`,
       text: emailContent,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
           <div style="background-color: #d4af37; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
-            <h1 style="margin: 0; font-size: 24px;">🏨 Hotel Haven</h1>
+            <h1 style="margin: 0; font-size: 24px;">🏨 Sky Dew Hotels</h1>
             <p style="margin: 5px 0 0 0; font-size: 16px;">New Reservation Request</p>
           </div>
           

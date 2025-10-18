@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative flex items-center justify-center h-screen">
         <div className="absolute inset-0 bg-black">
           <Image
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80"
+            src="/images/hero1.jpg"
             alt="Hotel Lobby"
             width={1600}
             height={900}
@@ -25,7 +25,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mb-4 text-sm tracking-widest uppercase text-gold-500"
           >
-            Welcome to the H&J Hotel
+            Welcome to the Sky Dew Hotel
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

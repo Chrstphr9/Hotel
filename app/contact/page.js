@@ -30,13 +30,13 @@ export default function Contact() {
     {
       icon: FaPhone,
       title: 'Phone',
-      detail: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      detail: '09032281081',
+      link: 'tel:+2349032281081'
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      detail: 'info@hjhotel.com',
+      detail: 'Info@skydewhotels.com',
       link: 'mailto:info@hjhotel.com'
     },
     {

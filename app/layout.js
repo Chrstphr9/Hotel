@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'S&W Hotel - Quality and Design',
-  description: 'Experience luxury and elegance at H&J Hotel. Modern accommodations with exceptional service.',
+  description: 'Experience luxury and elegance at Sky Dew Hotel. Modern accommodations with exceptional service.',
 }
 
 export default function RootLayout({ children }) {

@@ -44,7 +44,7 @@ export default function Gallery() {
           <p className="section-subtitle">EXPLORE OUR HOTEL</p>
           <h1 className="section-title">Gallery</h1>
           <p className="max-w-2xl mx-auto mt-4 text-gray-600">
-            Discover the elegance and luxury that awaits you at H&J Hotel
+            Discover the elegance and luxury that awaits you at Sky Dew Hotel
           </p>
         </motion.div>
 
