@@ -149,6 +149,8 @@ ${data.specialRequests || 'None specified'}
       `
     })
 
+    
+
     console.log('=== EMAIL SENT ===')
     console.log('Email ID:', emailResponse.data?.id)
     console.log('Recipient: somto565@gmail.com')
