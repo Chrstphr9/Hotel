@@ -80,7 +80,7 @@ ${data.specialRequests || 'None specified'}
 
     // Send email using Resend
     const emailResponse = await resend.emails.send({
-      from: 'Hotel Haven <noreply@hotelhaven.com>',
+      from: 'Hotel Haven <onboarding@resend.dev>',
       to: ['somto565@gmail.com'],
       subject: `🏨 New Reservation Request - ${data.firstName} ${data.lastName}`,
       text: emailContent,
